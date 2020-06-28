@@ -10,8 +10,8 @@
 	<clipPath id="SVGID_2_">
 		<use xlink:href="#SVGID_1_"  overflow="visible"/>
 	</clipPath>
-	<circle clip-path="url(#SVGID_2_)" fill="none" stroke="#B2C354" stroke-width="2" cx="23" cy="23" r="22"/>
-	<path clip-path="url(#SVGID_2_)" fill-rule="evenodd" clip-rule="evenodd" fill="#B2C354" d="M29.555,18.37
+	<circle clip-path="url(#SVGID_2_)" fill="none" stroke="#ee858c" stroke-width="2" cx="23" cy="23" r="22"/>
+	<path clip-path="url(#SVGID_2_)" fill-rule="evenodd" clip-rule="evenodd" fill="#ee858c" d="M29.555,18.37
 		c-0.555-0.563-1.461-0.571-2.024-0.016c-0.006,0.005-0.011,0.011-0.017,0.016l-6.2,6.2l-1.867-1.87
 		c-0.563-0.564-1.477-0.564-2.041-0.001c-0.564,0.563-0.564,1.477-0.001,2.041l2.888,2.891c0.566,0.56,1.477,0.56,2.042,0
 		l7.218-7.221c0.564-0.561,0.565-1.475,0.004-2.038C29.556,18.371,29.556,18.371,29.555,18.37"/>

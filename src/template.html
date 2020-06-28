@@ -6,7 +6,11 @@
     <title>Pincet</title>
 </head>
 <body>
-<header class="header" id="app">
+<header class="header">
+    <div class="scene">
+        <div data-offset="90" class="spot-one parallax"></div>
+        <div data-offset="50" class="spot-two parallax"></div>
+    </div>
     <section class="container">
         <div class="row header__menu">
             <a class="header__menu__logo">
@@ -16,14 +20,23 @@
                 Студия депиляции и
                 массажный кабинет
                 в Бресте
-                {{ counter }}
             </p>
             <div class="header__menu__map">
                 <div class="header__menu__map__preview"></div>
                 <div class="header__menu__map__address">
                     <p>Мы находимся в центре:</p>
-                    <span>г. Брест, ул. Гоголя, д.65</span>
-                    <button>Смотреть на карте</button>
+                    <span>г. Брест, ул. Гоголя, д.65</span><br>
+                    <div class="header__menu__map__activator">
+                        <span>Смотреть на карте</span>
+                        <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4902.503029544716!2d23.698268!3d52.093354!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47210bfa0846eda1%3A0x9d8826f6a26a2b91!2z0YPQuy4g0JPQvtCz0L7Qu9GPIDY1LCDQkdGA0LXRgdGCLCDQkdC10LvQsNGA0YPRgdGM!5e0!3m2!1sru!2sru!4v1593361877165!5m2!1sru!2sru"
+                                frameborder="0"
+                                class="header__menu__map__google"
+                                allowfullscreen=""
+                                aria-hidden="false"
+                                tabindex="0">
+                        </iframe>
+                    </div>
                 </div>
             </div>
             <div class="header__menu__contacts">
@@ -36,7 +49,7 @@
                 </div>
             </div>
             <div class="header__menu__online">
-                <button type="button">Записаться онлайн</button>
+                <button type="button" class="header__menu__online__button">Записаться онлайн</button>
             </div>
         </div>
         <div class="row header__navigation">
@@ -99,13 +112,18 @@
                         </button>
                     </div>
                 </div>
-                <div class="">
+                <div class="header__prime__card__wrapper">
                     <div class="header__prime__card">
                         <img src="assets/images/card.png" alt="">
                     </div>
+                    <div class="header__prime__card__hint__show">
+                        <img src="assets/images/information-button.png" alt="">
+                        <div class="pulse-animation"></div>
+                    </div>
                     <div class="header__prime__card__hint">
                         Everyone just loves the flavor of pork butt curry rinsed with garlic.
-                        Grill smooth tunas in a casserole with buttermilk for about an hour to perfect their pepperiness.
+                        Grill smooth tunas in a casserole with buttermilk for about an hour to perfect their
+                        pepperiness.
                     </div>
                 </div>
             </div>
@@ -115,5 +133,43 @@
         </div>
     </section>
 </header>
+<div class="background"></div>
+<section class="popup">
+    <button class="popup__close"></button>
+    <h2 class="popup__title"><span>Получите</span> программу обучения</h2>
+    <p class="popup__description">
+        Everyone loves the mossiness of leek ricotta mixd with al dente basil.
+        Celery can be jumbled with puréed shrimps, also try brushing the smoothie with vinegar.
+        Try grilling kebab covered with remoulade, mixed with jasmine.
+    </p>
+    <form class="popup__form">
+        <label for="some"></label>
+        <div class="popup__form__select">
+            <select name="some" id="some">
+                <option value="" disabled selected>Повышение квалификации</option>
+                <option value="">Scabbards hobble on hunger at puerto rico!</option>
+                <option value="">Aw, avast.</option>
+                <option value="">Rums scream on death at haiti!</option>
+                <option value="">Gar, clear yardarm. go to tubbataha reef.</option>
+            </select>
+        </div>
+        <label><input type="text" name="name" placeholder="Ваше имя"></label>
+        <label><input type="text" name="phone" placeholder="Ваш номер телефона"></label>
+        <div class="popup__form__button-wrapper">
+            <div class="popup__form__button__background"></div>
+            <button type="button" class="popup__form__button">
+                Получить программу
+            </button>
+        </div>
+    </form>
+</section>
+<section class="popup__accept">
+    <button class="popup__accept__close"></button>
+    <div class="popup__accept__check">
+        <img src="assets/images/svg/check.svg" alt="">
+    </div>
+    <h3 class="popup__accept__title">Ваш заказ принят.</h3>
+    <p class="popup__accept__description">Ожидайте звонка</p>
+</section>
 </body>
 </html>
