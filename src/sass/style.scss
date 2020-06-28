@@ -123,6 +123,7 @@ li {
 
 button {
   cursor: pointer;
+  outline: transparent;
 }
 
 //Header
@@ -188,6 +189,7 @@ button {
   width: 4.063vw;
   height: 4.063vw;
   background: url("../assets/images/map.png");
+  background-size: 4.063vw 4.063vw;
   border-radius: 50%;
 }
 
@@ -211,6 +213,7 @@ button {
   &:hover > .header__menu__map__google {
     width: 36.458vw;
     height: 20.833vw;
+    opacity: 1;
     transition: 1s;
     margin-left: -13.021vw;
   }
@@ -218,6 +221,7 @@ button {
 
 .header__menu__map__google {
   width: 0;
+  opacity: 0;
   height: 20.833vw;
   margin-left: -10.677vw;
   margin-top: 2vw;
@@ -352,6 +356,7 @@ button {
   background-color: #fefcfb;
   min-width: 12vw;
   border-radius: 1.563vw;
+  border: none;
   padding: 0.833vw 1.302vw 0.833vw 2.865vw;
   color: #1f1d1d;
   font-family: "Museo Sans Cyrl -500", sans-serif;
@@ -552,14 +557,14 @@ button {
 .pulse-animation {
   position: absolute;
   display: block;
-  width: 35px;
-  height: 35px;
+  width: 1.823vw;
+  height: 1.823vw;
   border-radius: 50%;
   background: #d7747a;
   cursor: pointer;
   animation: pulse 2s infinite;
-  top: 14px;
-  left: 16px;
+  top: 0.729vw;
+  left: 0.833vw;
   z-index: -1;
 }
 
@@ -573,8 +578,8 @@ button {
     box-shadow: 0 0 0 0 rgba(204, 44, 100, 0.4);
   }
   70% {
-    -moz-box-shadow: 0 0 0 30px rgba(204, 169, 44, 0);
-    box-shadow: 0 0 0 30px rgba(204, 169, 44, 0);
+    -moz-box-shadow: 0 0 0 1.563vw rgba(204, 169, 44, 0);
+    box-shadow: 0 0 0 1.563vw rgba(204, 169, 44, 0);
   }
   100% {
     -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
@@ -616,6 +621,7 @@ button {
 }
 
 .header__prime__scroll {
+  cursor: pointer;
   position: absolute;
   left: 50%;
   margin-left: -0.833vw;
@@ -623,6 +629,10 @@ button {
   height: 3.333vw;
   width: 1.667vw;
   z-index: 10;
+  transition: .5s;
+  &:hover {
+    bottom: -8.533vw;
+  }
 
   & > img {
     height: 3.333vw;
@@ -774,6 +784,7 @@ button {
 
 #some,
 .popup__form input {
+  outline: transparent;
   padding: 1.563vw 2.344vw;
   width: 26.042vw;
   margin: 0.781vw auto;
@@ -876,3 +887,38 @@ button {
 }
 
 //Parallax
+.spot-one,
+.spot-two,
+.spot-three {
+  position: fixed;
+}
+
+.spot-one {
+  width: 19.115vw;
+  height: 17.708vw;
+  background: url("../assets/images/spot-1.png") no-repeat;
+  background-size: 19.115vw 17.708vw;
+  opacity: 0.5;
+  top: 17.708vw;
+  left: 6.042vw;
+}
+
+.spot-two {
+  width: 13.125vw;
+  height: 13.854vw;
+  top: 4.323vw;
+  right: -5.208vw;
+  background: url("../assets/images/spot-2.png") no-repeat;
+  background-size: 13.125vw 13.854vw;
+  z-index: -1;
+}
+
+.spot-three {
+  width: 6.719vw;
+  height: 6.302vw;
+  top: 32.708vw;
+  right: 51.198vw;
+  background: url("../assets/images/spot-3.png") no-repeat;
+  background-size: 6.719vw 6.302vw;
+  z-index: -1;
+}

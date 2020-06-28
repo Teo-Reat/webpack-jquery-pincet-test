@@ -1,4 +1,5 @@
 import $ from 'jquery'
+const Rellax = require('rellax')
 
 $(document).ready(() => {
 	$('.header__prime__button').click(() => {
@@ -33,4 +34,14 @@ $(document).ready(() => {
 		$('.popup').removeClass('show')
 		$('.popup__accept').removeClass('show')
 	})
+
+	let spotOne = new Rellax('.spot-one', {
+		speed: 4
+	});
+	let spotTwo = new Rellax('.spot-two', {
+		speed: 5
+	});
+	let spotThree = new Rellax('.spot-three', {
+		speed: 12
+	});
 })
