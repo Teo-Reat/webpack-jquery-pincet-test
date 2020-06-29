@@ -44,4 +44,11 @@ $(document).ready(() => {
 	let spotThree = new Rellax('.spot-three', {
 		speed: 12
 	});
+
+	$('.header__menu__mobile').click(() => {
+		$('nav').slideToggle()
+	})
+	$('.header__open__map').click(() => {
+		$('.header__menu__map__google').slideToggle()
+	})
 })
